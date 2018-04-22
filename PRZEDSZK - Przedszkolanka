@@ -1,0 +1,35 @@
+#include <iostream>
+
+using namespace std;
+int main()
+{
+ int tests;
+int firstNumber, secondNumber, product;
+    cin>>tests;
+ 
+    while(tests--)
+    	{
+        	cin >> firstNumber;
+        	cin >> secondNumber;
+        	if(firstNumber==secondNumber)
+        	{
+            	cout<<firstNumber<<endl;
+        	}
+        	else
+        	{
+        	product = firstNumber*secondNumber;
+ 
+        		do
+        		{
+            	if(firstNumber>secondNumber)
+            		firstNumber-=secondNumber;
+            	else 
+            		secondNumber-=firstNumber;
+        		}
+        		while(firstNumber!=secondNumber);
+ 
+        	cout << product/firstNumber<endl;
+    		}
+    	}
+    return 0;
+}
