@@ -1,0 +1,30 @@
+#include <iostream>
+#include <string>
+#include <cctype>
+using namespace std;
+ 
+int main()
+{
+    string lan;
+    while(getline(cin,lan))
+    {
+        for(long long i=0;i<lan.size();i++)
+        {
+		        if(isspace(lan[i]))
+            {
+               lan[i]=0;
+               lan[i+1]=toupper(lan[i+1]);
+			      }
+        }
+        for(long long i=0; i<lan.size(); i++)
+        {
+            if (lan[i] != 0)
+            {
+                cout<<lan[i];
+            }
+        }
+        cout<<endl;
+    }
+    return 0;
+
+}
