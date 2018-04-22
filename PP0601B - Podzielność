@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int tests;
+	cin >> tests;
+	while (tests--)
+	{
+		int divisible=0;
+		int dividend=0;
+		int indivisible=0;
+		cin >> divisible >> indivisible;
+		for (int i=0; i<dividend; i++)
+		{
+			if (i%divisible==0 && i%indivisible!=0 )
+			{
+				cout <<i<<" ";
+			}
+		}
+		cout<<'\n';
+	}
+	return 0;
+}
