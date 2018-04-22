@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int test;
+    int tab[10000] = {0};
+    
+    cin >> test;
+    while (test--) 
+    {
+    	int segment,age;
+        cin >> segment;
+        age= 0;
+        for (int i = 0; i < segment; i++)
+        {
+            cin >> tab[i];
+        }
+        for (int i = 0; i < segment; i++)
+        {
+            age += tab[i];
+        }
+        cout << age + segment - 1 << endl;
+    }
+}
