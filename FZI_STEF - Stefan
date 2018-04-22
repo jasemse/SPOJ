@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int test;
+	cin>>test;
+	long long int a=0,b=0,c;
+	while(test--)
+	{
+		cin>>c;
+		a += c;
+		if(a > b)
+		{
+		b = a;
+		}
+		if (a<0) a=0;
+	}
+	cout<<b<<endl;
+}
