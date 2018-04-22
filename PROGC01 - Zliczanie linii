@@ -1,0 +1,17 @@
+#include <iostream>
+#include <cstdio>
+using namespace std;
+
+int main()
+{
+    char sign;
+    int counter = 0;
+    while((sign = cin.get()) != EOF)
+    {
+        if(sign == '\n')
+        {
+            counter++;
+        }
+    }
+    cout<< counter + 1<<endl;
+}
