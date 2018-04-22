@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+int nwd(int a,int b)
+{
+    int c;                    
+    while(b != 0)             
+    {
+        c = a % b;              
+        a = b;               
+        b = c;                
+    }
+    return a;                 
+}
+
+
+int main() {
+	int tests;
+	cin >> tests;
+	while (tests--)
+	{
+		int a,b;
+		cin >>a>>b;
+		cout<<nwd(a,b)<<endl;
+	}
+	return 0;
+}
