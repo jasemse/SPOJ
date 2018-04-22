@@ -1,0 +1,28 @@
+using System;
+
+public class Test
+{
+	public static void Main()
+	{
+	        int tests = int.Parse(Console.ReadLine());
+            while (tests != 0)
+            {
+                string pesel = Console.ReadLine();
+                int p1 = Convert.ToInt32(pesel[0]);
+                int p2 = 3 * Convert.ToInt32(pesel[1]);
+                int p3 = 7 * Convert.ToInt32(pesel[2]);
+                int p4 = 9 * Convert.ToInt32(pesel[3]);
+                int p5 = Convert.ToInt32(pesel[4]);
+                int p6 = 3 * Convert.ToInt32(pesel[5]);
+                int p7 = 7 * Convert.ToInt32(pesel[6]);
+                int p8 = 9 * Convert.ToInt32(pesel[7]);
+                int p9 = Convert.ToInt32(pesel[8]);
+                int p10 = 3 * Convert.ToInt32(pesel[9]);
+                int p11 = Convert.ToInt32(pesel[10]);
+                int sum = p1 + p2 + p3 + p4 + p5 + p6 + p7 + p8 + p9 + p10 + p11;
+                if (sum%10 == 0) Console.WriteLine("D");
+                else Console.WriteLine("N");
+                tests--;
+            }
+	}
+}
