@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	
+	int a,tests;
+	cin >> tests;
+	while (tests--)
+	{
+		cin >>a;
+		cout <<a*a<<endl;
+	}
+
+	return 0;
+}
