@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	   ios_base::sync_with_stdio(0);
+   string s;
+   while(getline(cin,s))
+   {
+        int howManyNumbers=0,howManyWords=0;
+        if(isalpha(s[0])) 
+        {
+        howManyWords++;
+        }
+        else
+        {
+        	howManyNumbers++;
+        }
+        for(int i=1;i<s.size()-1;i++)
+         if(isspace(s[i]))
+         {
+            if(isdigit(s[i+1]))
+            {
+            	howManyNumbers++;
+            }
+            else howManyWords++;
+         }
+      cout<<howManyNumbers<<" "<<howManyWords<<endl;
+   }
+	return 0;
+}
