@@ -1,0 +1,46 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int tests;
+	cin>>tests;
+while (tests--)
+		{
+		int number;
+		cin>>number;
+		if (number9)
+		{
+			cout<<"0 0"<<endl;
+		}
+		if (number==9)
+		{
+			cout<<"8 0"<<endl;
+		}
+		if (number==8 || number==6 || number==5)
+		{
+			cout<<"2 0"<<endl;
+		}
+		if (number==7)
+		{
+			cout<<"4 0"<<endl;
+		}
+		if (number==4)
+		{
+			cout<<"2 4"<<endl;
+		}
+		if (number==3)
+		{
+			cout<<"0 6"<<endl;
+		}
+		if (number==2)
+		{
+			cout<<"0 2"<<endl;
+		}
+		if (number==1 || number==0)
+		{
+			cout<<"0 1"<<endl;
+		}
+		}
+
+	return 0;
+}
