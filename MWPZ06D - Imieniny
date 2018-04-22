@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int tests;
+	cin >> tests;
+	while (tests--)
+	{
+		int people;
+		int candy;
+		cin >>people>>candy;
+		if (candy==0)
+		{
+			cout <<"NIE"<<endl;
+		}
+		else
+		{
+			  if (people == 1)
+              {
+                    cout << "TAK" << endl;
+              }
+              else 
+              {
+				if (candy%(people-1)==0) cout<<"NIE"<<endl;
+				else cout <<"TAK"<<endl;
+              }
+		}
+	}
+	return 0;
+}
