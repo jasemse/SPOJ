@@ -1,0 +1,32 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+    int tests;
+    cin>>tests;
+    while(tests--)
+    {
+        string lan;
+        cin>>lan;
+        int counter=1;
+        for (int i=1; i<=lan.length(); i++)
+        {
+            if(lan[i] != lan[i-1])
+            {
+                if(counter > 2)
+                    cout<< lan[i-1] << counter;
+                else if (counter == 2)
+                    cout<< lan[i-1] << lan[i-1];
+                else
+                    cout<<lan[i-1];
+                counter=1;
+            }
+            else
+                counter++;
+        }
+    cout<<endl;
+    }
+    return 0;
+}
