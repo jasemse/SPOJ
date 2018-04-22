@@ -1,0 +1,22 @@
+using System;
+
+public class Test
+{
+	public static void Main()
+	{
+			string lan;
+            while (((lan = Console.ReadLine())) != null)
+            {
+                string[] second = lan.Split();
+                int counter = 0;
+                for (int i = 2; i <second.Length; i++)
+                {
+                    if (second[0] == second[i])
+                    {
+                        counter++;
+                    }
+                }
+                Console.WriteLine(counter);
+            }
+	}
+}
