@@ -1,0 +1,56 @@
+#include<iostream>
+#include<cstdlib>
+using namespace std;
+ 
+void change(long long n, int p)
+{
+     if(n>0)
+     {
+            change(n/p,p);
+            if(n%p>9)
+                     switch(n%p) 
+                     {
+                                case 10:
+                                     cout<<"A";
+                                     break;
+                                case 11:
+                                     cout<<"B";
+                                     break;
+                                case 12:
+                                     cout<<"C";
+                                     break;
+                                case 13:
+                                     cout<<"D";
+                                     break;
+                                case 14:
+                                     cout<<"E";
+                                     break;
+                                case 15:
+                                     cout<<"F";
+                                     break;
+                     }
+           else
+               cout<<n%p;
+     }
+}
+ 
+int main()
+{
+	int test;
+	cin>>test;
+	while (test--)
+	{
+	int n;
+	cin>>n;
+	int p=16;
+    if(n==0)
+        cout<<0;
+    else
+        change(n,p);
+	p-=5;
+	cout<<" ";
+	change(n,p);
+    cout<<endl;    
+	}
+    return 0;    
+}
