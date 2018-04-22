@@ -1,0 +1,42 @@
+using System;
+
+public class Test
+{
+	public static void Main()
+	{
+	string lan = "";
+            while ((lan = Console.ReadLine()) != null)
+            {
+                string[] equation = lan.Split();
+                int a = int.Parse(equation[1]);
+                int b = int.Parse(equation[2]);
+                int result = 0;
+                string addition = "+";
+                string modulo = "%";
+                string subtraction = "-";
+                string multiplication = "*";
+                string division = "/";
+                if ((equation[0]) == addition)
+                {
+                    result = a + b;
+                }
+                if ((equation[0]) == modulo)
+                {
+                    result = a % b;
+                }
+                if (equation[0] == subtraction)
+                {
+                    result = a - b;
+                }
+                if (equation[0] == multiplication)
+                {
+                    result = a * b;
+                }
+                if (equation[0] == division)
+                {
+                    result = a / b;
+                }
+                Console.WriteLine(result);
+            }
+	}
+}
