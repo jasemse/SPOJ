@@ -1,0 +1,20 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main() {
+	
+	float a,b,c,x;
+       cin >> a >> b >>c;
+       if (a !=0) {
+             x=(c-b)/a;
+             cout << setprecision(2) << fixed << x << endl;
+             }
+             else if (b==c){
+                  cout <<"NWR"<< endl;
+                  }else{
+                        cout <<"BR"<< endl;
+                        } 
+
+	return 0;
+}
