@@ -1,0 +1,41 @@
+using System;
+
+public class Test
+{
+public static bool palindrom(int number)
+{
+    string lan=number.ToString();
+    string reverse=""; 
+ 
+    for(int i=0; i<lan.Length;i++)
+    {
+        reverse+=lan[lan.Length-i-1];
+    }
+    return lan==reverse;
+}
+	public static void Main()
+	{
+		int tests=int.Parse(Console.ReadLine());
+		while (tests!=0)
+		{
+			int counter=0;
+			string numberAsString=Console.ReadLine(); 
+ 			int number=int.Parse(liczba);
+			while(palindrom(number)==false) 
+			{
+				int tmp=0;
+				string temp="";
+				for(int i=numberAsString.Length-1;i>=0;i--)
+				{
+					temp+=numberAsString[i];
+				}
+				tmp=Convert.ToInt32(temp); 
+				number+=tmp;
+				numberAsString=number.ToString();
+				counter++; 
+			}
+			Console.WriteLine(number+" "+counter);
+			tests--;
+		}
+	}
+}
