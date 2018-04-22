@@ -1,0 +1,20 @@
+using System;
+
+public class Test
+{
+	public static void Main()
+	{
+		int tests=int.Parse(Console.ReadLine());
+		while (tests!=0)
+		{
+		string [] lan=Console.ReadLine().Split();
+		for (int i=2; i<lan.Length; i++)
+		{
+			Console.Write(lan[i]+ " ");
+		}
+		Console.Write(lan[1]);
+		Console.WriteLine();
+		tests--;
+		}
+	}
+}
