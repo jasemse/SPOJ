@@ -1,0 +1,25 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+		const int day =86400;
+		int tests;
+		cin>>tests;
+		while (tests--)
+		{
+		int howManyBoxes[100000] ;	
+		int howManyGuzzlers,cookiesInTheBox;
+		double d=0;
+		cin >>howManyGuzzlers>>cookiesInTheBox;
+		int eatTimes [howManyGuzzlers] ; 
+		for (int i=0; i<howManyGuzzlers; i++)
+		{
+		cin>>eatTimes[i];	
+		howManyBoxes[i]=day/eatTimes[i];
+		d+=howManyBoxes[i];
+		}
+		cout<<ceil (d/cookiesInTheBox)<<endl;
+		}
+	return 0;
+}
