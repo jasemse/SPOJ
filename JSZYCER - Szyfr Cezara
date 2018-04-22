@@ -1,0 +1,24 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+string lan,encrypted;
+ while(getline(cin, lan))
+ {
+  for(int i=0; i<lan.length(); i++)
+  	{
+
+    	if(lan[i]!=32) lan[i]=lan[i]+3;
+    	if(lan[i]>90)
+			{
+        	lan[i]-=26;
+    		}
+    encrypted+=lan[i];
+    }
+    cout << encrypted<<endl;
+    encrypted="";
+  }     
+return 0;
+}
