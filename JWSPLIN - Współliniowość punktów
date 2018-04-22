@@ -1,0 +1,25 @@
+using System;
+
+public class Test
+{
+	public static void Main()
+	{
+		int tests = int.Parse(Console.ReadLine());
+            while (tests != 0)
+            {
+                int determinant = 0;
+                int x=0, x1=0, x2=0, y=0, y1=0, y2=0;
+                string [] lan = Console.ReadLine().Split();
+                x = Convert.ToInt32(lan[0]);
+                y = Convert.ToInt32(lan[1]);
+                x1 = Convert.ToInt32(lan[2]);
+                y1 = Convert.ToInt32(lan[3]);
+                x2 = Convert.ToInt32(lan[4]);
+                y2 = Convert.ToInt32(lan[5]); 
+                determinant = x * y1 + x1 * y2 + y * x2 - y1 * x2 - x * y2 - y * x1;
+                if (determinant == 0) Console.WriteLine("TAK");
+                else Console.WriteLine("NIE");
+                tests--;
+            }
+	}
+}
