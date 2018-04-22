@@ -1,0 +1,34 @@
+using System;
+
+public class Test
+{
+	public static void Main()
+	{
+            int[] tab = new int[52];
+            string lan;
+            char[] letters = { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u','v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U','V', 'W', 'X', 'Y', 'Z' };
+            int tests = int.Parse(Console.ReadLine());
+            while (tests != 0)
+            {
+                lan = Console.ReadLine();
+                for (int i = 0; i < lan.Length; i++)
+                { 
+                    for (int j = 0; j < letters.Length; j++)
+                    {
+                        if (lan[i] == tab[j])
+                        {
+                            tab[j]++;
+                        }
+                    }
+                }
+                tests--;
+            }
+            for (int k = 0; k < tab.Length; k++)
+            {
+                if (tab[k] != 0)
+                {
+                    Console.WriteLine(letters[k] + " " + tab[k]);
+                }
+            }
+	 }
+}
