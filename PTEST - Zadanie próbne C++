@@ -1,0 +1,10 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int firstNumber,secondNumber;
+cin >>firstNumber;
+cin >>secondNumber;
+cout <<firstNumber+secondNumber;
+	return 0;
+}
