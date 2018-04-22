@@ -1,0 +1,26 @@
+using System;
+
+public class Test
+{
+	public static void Main()
+	{
+	 string x;
+     while ((x = Console.ReadLine()) !=  null)
+        {
+             string[] data = x.Split();
+             double delta = (double.Parse(data[1]) * double.Parse(data[1])) - (4 * double.Parse(data[0]) * double.Parse(data[2]));
+             if (delta < 0)
+             {
+            Console.WriteLine("0");
+             }
+             else if (delta == 0)
+            {
+             Console.WriteLine("1");
+             }
+             else
+            {
+             Console.WriteLine("2");
+            }
+         }
+	}
+}
