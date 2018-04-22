@@ -1,0 +1,30 @@
+using System;
+
+public class Test
+{
+	public static void Main()
+	{
+		  string lan = Console.ReadLine();
+ 
+            int buffer = 0;
+            double d = 0.0, r = 0.0;
+            double result=0.0;
+ 
+            for (int i = 0; i < lan.Length; i++)
+            {
+                if (lan[i] == ' ')
+                {
+                    bufor = i + 1;
+ 
+                    r = double.Parse(lan.Substring(0, buffer));
+                    break;   
+                }
+ 
+            }
+            d = double.Parse(wejscie.Substring(buffer, lan.Length - buffer));
+ 
+            result = (((r*r)-((d*d)*0.25))* 3.141592654);
+ 
+            Console.WriteLine(Math.Round(result,2).ToString());
+	}
+}
