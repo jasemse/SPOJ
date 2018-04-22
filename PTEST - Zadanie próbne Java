@@ -1,0 +1,14 @@
+import java.util.*;
+import java.lang.*;
+
+class Main
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner in=new Scanner(System.in);
+        int firstNumber=in.nextInt();
+        int secondNumber=in.nextInt();
+        int result=firstNumber+secondNumber;
+        System.out.println(result);
+	}
+}
