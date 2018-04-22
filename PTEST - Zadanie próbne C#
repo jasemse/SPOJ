@@ -1,0 +1,12 @@
+using System;
+
+public class Test
+{
+	public static void Main()
+	{
+		byte firstNumber=byte.Parse(Console.ReadLine());
+		byte secondNumber=byte.Parse(Console.ReadLine());
+		int sum=firstNumber+secondNumber;
+		Console.Write(sum);
+	}
+}
