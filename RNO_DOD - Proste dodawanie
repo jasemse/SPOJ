@@ -1,0 +1,21 @@
+using System;
+
+public class Test
+{
+	public static void Main()
+	{
+		int tests = int.Parse(Console.ReadLine());
+            while (tests != 0)
+            {
+                int sum = 0;
+                int howManyNumbers = int.Parse(Console.ReadLine());
+                string[] numbers = Console.ReadLine().Split();
+                for (int i = 0; i < howManyNumbers; i++)
+                {
+                    sum += Convert.ToInt32(numbers[i]);
+                }
+                tests--;
+                Console.WriteLine(sum);
+            }
+	}
+}
