@@ -1,0 +1,46 @@
+using System;
+
+public class Test
+{
+	public static void Main()
+	{
+		int tests=int.Parse(Console.ReadLine());
+		while (tests!=0)
+		{
+		int number=int.Parse(Console.ReadLine());
+		if (number>9)
+		{
+			Console.WriteLine("0 0");
+		}
+		if (number==9)
+		{
+			Console.WriteLine("8 0");
+		}
+		if (number==8 || number==6 || number==5)
+		{
+			Console.WriteLine("2 0");
+		}
+		if (number==7)
+		{
+			Console.WriteLine("4 0");
+		}
+		if (number==4)
+		{
+			Console.WriteLine("2 4");
+		}
+		if (number==3)
+		{
+			Console.WriteLine("0 6");
+		}
+		if (number==2)
+		{
+			Console.WriteLine("0 2");
+		}
+		if (number==1 || number==0)
+		{
+			Console.WriteLine("0 1");
+		}
+			tests--;
+		}
+	}
+}
