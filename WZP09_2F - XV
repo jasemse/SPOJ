@@ -1,0 +1,32 @@
+#include <iostream>
+#include <cstdio>
+#include <cstring>
+using namespace std;
+
+int main() {
+	
+	char digits[1000];
+    int sum = 0; 
+    while(1)
+    {
+        cin>>digits;
+        if(digits[0] == '0')
+        {
+         break;
+        }
+        else
+        {
+            int length = strlen(digits);
+            sum = 0;
+            for(int i=0; i<length; i++)
+            {
+                sum += (digits[i] - 48); 
+            }
+            if((digits[length-1] == '0' || digits[length-1] == '5') && (sum%3 == 0))
+                cout<<"TAK"<<endl;
+            else
+                cout<<"NIE"<<endl;
+        }
+	}
+	
+}
