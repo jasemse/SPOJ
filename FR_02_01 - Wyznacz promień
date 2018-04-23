@@ -1,0 +1,16 @@
+#include <iostream>
+#include <cmath>
+#include <iomanip>
+using namespace std;
+
+int main() {
+	double xa,ya,xb,yb,xc,yc;
+	cin>>xa>>ya>>xb>>yb>>xc>>yc;
+	double area=0.5*abs((xb-xa)*(yc-ya)-((yb-ya)*(xc-xa)));
+	double a=sqrt((xb-xa)*(xb-xa)+(yb-ya)*(yb-ya));
+	double b=sqrt((xc-xb)*(xc-xb)+(yc-yb)*(yc-yb));
+	double c=sqrt((xa-xc)*(xa-xc)+(ya-yc)*(ya-yc));
+	double radius=a*b*c/(4*area);
+	cout << setprecision(2) << fixed << radius << endl;
+	return 0;
+}
