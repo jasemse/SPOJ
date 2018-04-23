@@ -1,0 +1,43 @@
+#include<iostream>
+#include<string>
+#include <algorithm>
+ 
+using namespace std;
+ 
+int main()
+{
+	ios_base::sync_with_stdio(0);
+	short test;
+	cin >> test;
+	int* tab = new int[1000000];
+	while (test--)
+	{
+		int n;
+		cin >> n;
+ 
+		for (int i = 0; i < n; i++)
+		{
+			cin >> tab[i];
+		}
+		sort(tab, tab + n);
+ 
+		int number = tab[0];
+		int howManyNumbers = 1;
+		for (int i = 1; i < n; i++)
+		{
+			if (number == tab[i]) howManyNumbers++;
+			else
+			{
+				if (howManyNumbers % 2 == 1)break;
+				else
+				{
+					number = tab[i];
+					howManyNumbers = 1;
+				}
+			}
+		}
+		cout << number<<endl;
+	}
+	delete[] tab;
+	return 0;
+}
