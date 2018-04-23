@@ -1,0 +1,21 @@
+#include <iostream>
+#include <cmath>
+#include <iomanip>
+using namespace std;
+
+int main() {
+int test;
+cin>>test;
+while (test--)
+{
+	int a,b,c;
+	cin >>a>>b;
+	if (b%2!=0) b*=2;
+	c=b/2;
+	const double pi = acos(-1.0);
+	double perimeter=a*pi;
+	double result=perimeter/b;
+	cout << setprecision(3) << fixed << result <<" " <<c<< endl;
+}
+	return 0;
+}
