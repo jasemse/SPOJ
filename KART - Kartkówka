@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+   size_t n;
+   int tests;
+   cin>>tests;
+   while(tests--)
+   {
+   cin >> n;
+   cin.ignore();
+   size_t zeros = 0;
+   for ( size_t i = n/5; i > 0; i /= 5 )
+      zeros += i;
+   cout <<zeros<<endl;
+   }
+   cin.get();
+   return 0;
+}
