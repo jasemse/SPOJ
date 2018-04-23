@@ -1,0 +1,41 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	ios_base::sync_with_stdio(false);
+    int number;
+    int max=0;
+    int secondMax=0;
+    int pom,pom2;
+
+    while(true)
+    {
+       if(number!=0)
+        {
+        cin>>number;
+          if(number>max)
+          {
+            pom=max;
+            max=number;
+            secondMax=pom;
+          }
+          if(number>secondMax && number<max)
+          {
+            secondMax=number;
+          }
+        }
+      else{break;}
+      }
+
+  if(secondMax==0)
+  {
+    cout<<max<<endl;
+  } 
+  else
+  {
+  cout<<secondMax<<endl;
+  }
+
+}
