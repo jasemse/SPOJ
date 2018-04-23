@@ -1,0 +1,23 @@
+using System;
+
+public class Test
+{
+	public static void Main()
+	{
+		string lan=Console.ReadLine();
+		bool isPossible=false;
+			for (int i=0;i<lan.Length;i++)
+			{
+				int number=Convert.ToInt32(lan[i]);
+				if (number%2==0)
+				{
+					isPossible=true;
+				}
+			}
+		if (isPossible==false)
+		{
+			Console.WriteLine("Nie");
+		}
+		else Console.WriteLine("Tak");
+	}
+}
