@@ -1,0 +1,51 @@
+using System;
+
+public class Test
+{
+	public static void Main()
+	{
+ 		int tests = int.Parse(Console.ReadLine());
+            while (tests != 0)
+            {
+                string lan = Console.ReadLine();
+                char[] result = new char[lan.Length];
+                for (int i = 0; i < lan.Length; i++)
+                {
+                    if (lan[i] >= 65 && lan[i] <= 67)
+                    {
+                        result[i] = '2';
+                    }
+                    if (lan[i] >= 68 && lan[i] <= 70)
+                    {
+                        result[i] = '3';
+                    }
+                    if (lan[i] >= 71 && lan[i] <= 73)
+                    {
+                        result[i] = '4';
+                    }
+                    if (lan[i] >= 74 && lan[i] <= 76)
+                    {
+                        result[i] = '5';
+                    }
+                    if (lan[i] >= 77 && lan[i] <= 79)
+                    {
+                        result[i] = '6';
+                    }
+                    if (lan[i] >= 80 && lan[i] <= 83)
+                    {
+                        result[i] = '7';
+                    }
+                    if (lan[i] >= 84 && lan[i] <= 86)
+                    {
+                        result[i] = '8';
+                    }
+                    if (lan[i] >= 87 && lan[i] <= 90)
+                    {
+                        result[i] = '9';
+                    }
+                }
+                tests--;
+                Console.WriteLine(result);
+            }
+	}
+}
