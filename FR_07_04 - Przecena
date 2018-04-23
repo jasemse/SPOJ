@@ -1,0 +1,16 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main() {
+	double a,b;
+	int tests;
+	cin>>tests;
+	while (tests--)
+	{
+	cin >>a>>b;
+	double result = (100-((100-a)-(b/100)*(100-a)));
+	cout << setprecision(2) << fixed <<  result << endl;
+	}
+	return 0;
+}
