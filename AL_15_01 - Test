@@ -1,0 +1,27 @@
+#include <iostream>
+#include <string>
+#include <cstddef>
+using namespace std;
+
+int main()
+{
+    string D;
+    string J,M;
+    getline(cin,D);
+    getline(cin,J);
+    getline(cin,M);
+    int max = min (D.size() ,min(J.size(), M.size()));
+    int wynik = 0;
+    for (int i=0; i < max; ++i)
+    {
+        if (D[i] != J[i])
+            wynik++;
+        if (D[i] != M[i] && M[i] == J[i])
+            wynik++;
+        if (J[i] == D[i] && M[i] != J[i])
+            wynik++;
+    }
+    cout<<wynik;
+
+    return 0;
+}
