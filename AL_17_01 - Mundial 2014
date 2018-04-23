@@ -1,0 +1,14 @@
+using System;
+
+public class Test
+{
+	public static void Main()
+	{
+char zet='Z';
+		char two = (char) (zet - '(');
+		char zero = (char) (zet - '*');
+		char one = (char) (zet - ')');
+		char four = (char) (zet - '&');
+		Console.WriteLine("Mundial" +" " +two+zero+one+four);
+	}
+}
