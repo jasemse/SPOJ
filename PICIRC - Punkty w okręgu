@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int xa,ya,r;
+	cin >>xa>>ya>>r;
+	int test;
+	cin>>test;
+	while (test--)
+	{
+	int x=0,y=0;
+	cin>>x>>y;
+	if ((x-xa)*(x-xa)+(y-ya)*(y-ya)==(r*r))
+	{
+		cout<<"E"<<endl;
+	}
+	else if ((x-xa)*(x-xa)+(y-ya)*(y-ya)<(r*r))
+	{
+		cout<<"I"<<endl;
+	}
+	else cout<<"O"<<endl;
+	}
+	return 0;
+}
