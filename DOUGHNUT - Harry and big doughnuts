@@ -1,0 +1,21 @@
+#include <iostream>
+ 
+using namespace std;
+int c,k,w,test;
+int main()
+{
+cin>>test;
+while(test--)
+{
+	cin>>c>>k>>w;
+	if(w*c<=k )
+		{
+		cout<<"yes"<<endl;
+		}
+	else
+		{
+		cout<<"no"<<endl;
+		}
+}
+return 0;
+}
