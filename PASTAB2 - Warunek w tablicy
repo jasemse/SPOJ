@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	
+	int dimension;
+    cin>>dimension;
+    long long numbers[dimension];
+    for(int i=0; i<dimension; i++)
+    {
+        cin>>numbers[i];
+    }
+    char sign;
+    int number;
+    cin>> sign >> number;
+    for(int i=0; i<dimension; i++)
+    {
+        if(sign == '>' && numbers[i] > number)
+        {
+            cout<< numbers[i] <<'\n';
+        }
+        if(sign == '<' && numbers[i] < number)
+        {
+            cout<< numbers[i] << '\n';
+        }
+    }
+return 0;
+
+}
