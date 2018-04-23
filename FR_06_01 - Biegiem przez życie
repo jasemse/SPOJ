@@ -1,0 +1,17 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main() {
+	double a,b,c,d;
+	cin>>a>>b>>c>>d;
+	int A,B,C,D;
+	cin>>A>>B>>C>>D;
+	double K16K36=((b*B)+(d*D))/(B+D);
+	double M16M36=((a*A)+(c*C))/(A+C);
+	double M16K16M36K36=((b*B)+(d*D)+(a*A)+(c*C))/(A+B+C+D);
+	cout << setprecision(2) << fixed << "K16K36: "<< K16K36<< endl;
+	cout << setprecision(2) << fixed << "M16M36: "<< M16M36 << endl;
+	cout << setprecision(2) << fixed << "M16K16M36K36: "<< M16K16M36K36 << endl;
+	return 0;
+}
