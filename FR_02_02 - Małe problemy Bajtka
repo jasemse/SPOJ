@@ -1,0 +1,54 @@
+using System;
+
+public class Test
+{
+	static int HowManyCircles(string lan)
+        {
+            int result = 0;
+            for (int i = 0; i < lan.Length; i++)
+            {
+                if (lan[i] == '0' || lan[i] == '6' || lan[i] == '9')
+                {
+                    wynik++;
+                }
+                else if (lan[i] == '8')
+                {
+                    wynik += 2;
+                }
+            }
+            return wynik;
+        }
+	public static void Main()
+	{
+		   	    string min = "";
+            string max = "";
+ 
+            int tests=int.Parse(Console.ReadLine());
+            while (tests>0)
+            {
+                string[] lan = Console.ReadLine().Split();
+                max = lan[0];
+                min = lan[0];
+                int m;
+                int n = int.Parse(max);
+                int k = int.Parse(min);
+                for (int i = 1; i < 6; i++)
+                {
+                    m = int.Parse(lan[i]);
+ 
+                    if (m > n)
+                    {
+                        n = m;
+                        max = n.ToString();
+                    }
+                    if (m < k)
+                    {
+                        k=m;
+                        min = k.ToString();
+                    }
+                }
+                tests--;
+                Console.WriteLine(HowManyCircles(min) + " " + HowManyCircles(max));
+            }
+        }
+	}
