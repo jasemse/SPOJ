@@ -1,0 +1,32 @@
+import java.util.*;
+import java.lang.*;
+
+class Main
+{
+	public static boolean anagram(String a, String b) {
+        char[] first = a.toCharArray();
+        char[] second = b.toCharArray();
+        Arrays.sort(first);
+        Arrays.sort(second);
+        return Arrays.equals(first, second);
+    }
+
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner in=new Scanner(System.in);
+		String lan=in.nextLine();
+		String [] t=lan.split(" ");
+		int test=Integer.parseInt(t[1]);
+		int appearance=0;
+		String str;
+		for(int i=0;i<test;i++)
+		{
+			str=in.nextLine();
+			if (anagram(t[0],str)==true)
+			{
+			appearance++;
+			}
+		}
+		System.out.println(appearance);	
+	}
+}
