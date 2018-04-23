@@ -1,0 +1,23 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+	int tests;
+	cin>>tests;
+	while (tests--)
+	{
+		int area;
+		cin >>area;
+		int divider=1;
+		for (int i=2, k=sqrt((long double)area);i<=k;i++)
+		{
+			if (area%i==0)
+			{
+				divider=i;
+			}
+		}
+		cout <<divider*2 +((area/divider)*2)<<endl;
+	}
+	return 0;
+}
