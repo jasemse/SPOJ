@@ -1,0 +1,68 @@
+#include <cstdlib>
+#include <iostream>
+#include <string.h>
+ 
+using namespace std;
+string lan;
+int year=0;
+string::iterator it;
+ 
+int main()
+{
+    cin >> lan;
+    it = lan.begin();
+                  
+    for (int i=1; i <= lan.length();i++)
+    {
+        if (*(it+i-1)=='a') {year += 1;}
+ 
+        if (*(it+i-1)=='b') {year += 2;}
+ 
+        if (*(it+i-1)=='c') {year += 3;}
+ 
+        if (*(it+i-1)=='d') {year+= 4;}
+ 
+        if (*(it+i-1)=='e') {year += 5;}
+ 
+        if (*(it+i-1)=='f') {year += 6;} 
+ 
+        if (*(it+i-1)=='g') {year += 7;}
+ 
+        if (*(it+i-1)=='h') {year += 8;}
+ 
+        if (*(it+i-1)=='i') {year += 9;}
+ 
+        if (*(it+i-1)=='k') {year += 10;}
+ 
+        if (*(it+i-1)=='l') {year += 20;}
+ 
+        if (*(it+i-1)=='m') {year += 30;}
+ 
+        if (*(it+i-1)=='n') {year += 40;}
+ 
+        if (*(it+i-1)=='o') {year += 50;}
+ 
+        if (*(it+i-1)=='p') {year += 60;}
+ 
+        if (*(it+i-1)=='q') {year += 70;}
+ 
+        if (*(it+i-1)=='r') {year += 80;}
+ 
+        if (*(it+i-1)=='s') {year += 90;}
+ 
+        if (*(it+i-1)=='t') {year += 100;}
+ 
+        if (*(it+i-1)=='v') {year += 200;}
+ 
+        if (*(it+i-1)=='x') {year += 300;}
+ 
+        if (*(it+i-1)=='y') {year += 400;}
+ 
+        if (*(it+i-1)=='z') {year += 500;}
+ 
+       
+        }
+    cout << year << endl;
+    system("PAUSE");
+   
+}
