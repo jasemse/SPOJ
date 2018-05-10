@@ -1,0 +1,31 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main()
+{
+    ios_base::sync_with_stdio(0);
+    int tests;
+    char a;
+
+    cin >> tests;
+    cin.get(a);
+    while(tests--)
+    {
+    int i=4;
+    int l=0;
+        while(cin.get(a))
+        {
+            if(a == '\n') break;
+            if(i == -1)
+            {
+                cout << (char)(l+65);
+                i = 4;
+                l = 0;
+            }
+            l += (a - '0') * pow(2, i);
+            i--;
+        }
+        cout << (char)(l+65) << endl;
+    }
+}
