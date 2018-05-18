@@ -1,0 +1,17 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+	int test;
+	cin>>test;
+	while(test--)
+	{
+		float x,y,z;
+		cin>>x>>y>>z;
+		float firstResult=((z*y)-(x+y))/(z-1)*12;
+		int result=round(firstResult);
+		cout<<result<<endl;
+	}
+
+	return 0;
