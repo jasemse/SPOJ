@@ -13,16 +13,16 @@ public class Test
 		n=long.Parse(coefficients[0]);
 		k=long.Parse(coefficients[1]);
 		if (k==0 || k==n)
-        {
+                	{
 			result=1;
-		}
+			}
 		else
-		{
-		    for (int i=1;i<=k;i++)
-            {  
-			   result = result * ( n - i + 1 ) / i;
-		    }
-		}
+			{
+		    	for (int i=1;i<=k;i++)
+                    		{  
+			   	result = result * ( n - i + 1 ) / i;
+		    		}
+			}	
 		Console.WriteLine(String.Format("{0:f0}",result));
 		tests--;	
 		}
