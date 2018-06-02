@@ -9,26 +9,26 @@ int main() {
     cin >> tests;
     while(tests--)  
     {
-        cin >> A1 >> B1 >> A2 >> B2;
-        if(A1 < B1)
+        cin >> a1 >> b1 >> a2 >> b2;
+        if(a1 < b1)
         {
-        	int tmp = A1;
-			    A1 = B1;
-			    B1 = tmp;
+        int tmp = a1;
+	a1 = b1;
+	b1 = tmp;
         }
-        if(A2 < B2)
+        if(a2 < b2)
         {
-        int tmp = A2;
-			    A2 = B2;
-			    B2 = tmp;
+        int tmp = a2;
+	a2 = b2;
+	b2 = tmp;
         }
-        if(A1 > A2 && B1 > B2) cout << "TAK"<<endl;
-        else if(A1 <= A2 && B1 <= B2) cout << "NIE"<<endl;
+        if(a1 > a2 && b1 > b2) cout << "TAK"<<endl;
+        else if(a1 <= a2 && b1 <= b2) cout << "NIE"<<endl;
         else
         {
             double d1, d2;
-            d1 = sqrt(A1 * A1 + B1 * B1);
-            d2 = sqrt(A2 * A2 + B2 * B2);
+            d1 = sqrt(a1 * a1 + b1 * b1);
+            d2 = sqrt(a2 * a2 + b2 * b2);
             if(d1 <= d2)
             {
             cout << "NIE"<<endl;
@@ -36,11 +36,11 @@ int main() {
             else 
             {
                 double a, b, c;
-                a = 0.5 * A1 - sqrt(pow(0.5 * d2, 2) - pow(0.5 * B1, 2));
-                b = 0.5 * B1 - sqrt(pow(0.5 * d2, 2) - pow(0.5 * A1, 2));
+                a = 0.5 * a1 - sqrt(pow(0.5 * d2, 2) - pow(0.5 * b1, 2));
+                b = 0.5 * b1 - sqrt(pow(0.5 * d2, 2) - pow(0.5 * a1, 2));
                 c = sqrt(a * a + b * b);
 
-                if(c > B2) 
+                if(c > b2) 
                 {
                 cout << "TAK"<<endl;
                 }
