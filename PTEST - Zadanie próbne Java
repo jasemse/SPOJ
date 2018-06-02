@@ -5,10 +5,9 @@ class Main
 {
 	public static void main (String[] args) throws java.lang.Exception
 	{
-		Scanner in=new Scanner(System.in);
+	Scanner in=new Scanner(System.in);
         int firstNumber=in.nextInt();
         int secondNumber=in.nextInt();
-        int result=firstNumber+secondNumber;
-        System.out.println(result);
+        System.out.println(irstNumber+secondNumber);
 	}
 }
