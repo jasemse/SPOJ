@@ -8,6 +8,6 @@ class Main
 	Scanner in=new Scanner(System.in);
         int firstNumber=in.nextInt();
         int secondNumber=in.nextInt();
-        System.out.println(irstNumber+secondNumber);
+        System.out.println(firstNumber+secondNumber);
 	}
 }
