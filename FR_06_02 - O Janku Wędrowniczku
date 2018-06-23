@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int zdania=0;
+	string tekst;
+	while (cin>>tekst){
+		for(int i = 0; i < tekst.length(); i++)
+		{
+			if(tekst[i] == '?')
+			zdania++;
+			else if(tekst[i] == '!')
+			zdania++;
+			else if(tekst[i] == '.')
+			{
+				if(i + 2 < tekst.length() && tekst[i+2] == '.')
+				{
+				i += 2;
+				zdania++;
+				}
+				else
+				zdania++;
+			}
+		}
+	}
+	cout<<zdania<<endl;
+}
