@@ -1,0 +1,15 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+	std::ios_base::sync_with_stdio(false); 
+	double P1,P2;
+	while(cin>>P1>>P2)
+	{
+	double P3=pow(P2,2)/P1;
+	double wynik=P1+P2+P2+P3;
+	printf("%.2f", wynik);
+	printf("\n");
+	}
+}
