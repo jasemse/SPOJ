@@ -1,0 +1,33 @@
+#include <iostream>
+#include <cmath>
+#include <iomanip>
+using namespace std;
+
+int main()
+{
+    double stopnieGodzinowe= 360 / 12;
+    double stopnieMinutowe = 360 / 60;
+
+    int tests;
+    double godzina, minuta, stopnie;
+    char dwukropek;
+
+    cin >> tests;
+    while(tests--)
+    {
+        cin >> godzina >> dwukropek >> minuta;
+
+        stopnie = stopnieGodzinowe * godzina + stopnieGodzinowe * (minuta / 60) - stopnieMinutowe * minuta;
+
+        while(stopnie >= 360)
+            stopnie -= 360;
+
+        while(stopnie < 0)
+            stopnie += 360;
+
+        if(stopnie > 180)
+            stopnie = 360 - stopnie;
+
+        cout << setprecision(1) << fixed << stopnie << endl;
+    }
+}
